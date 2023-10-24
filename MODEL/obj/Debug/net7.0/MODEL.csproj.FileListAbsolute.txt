@@ -1,0 +1,12 @@
+/Users/menotti/Desktop/Repository/Personal/LEE/calculoprecio/MODEL/bin/Debug/net7.0/MODEL.deps.json
+/Users/menotti/Desktop/Repository/Personal/LEE/calculoprecio/MODEL/bin/Debug/net7.0/MODEL.dll
+/Users/menotti/Desktop/Repository/Personal/LEE/calculoprecio/MODEL/bin/Debug/net7.0/MODEL.pdb
+/Users/menotti/Desktop/Repository/Personal/LEE/calculoprecio/MODEL/obj/Debug/net7.0/MODEL.csproj.AssemblyReference.cache
+/Users/menotti/Desktop/Repository/Personal/LEE/calculoprecio/MODEL/obj/Debug/net7.0/MODEL.GeneratedMSBuildEditorConfig.editorconfig
+/Users/menotti/Desktop/Repository/Personal/LEE/calculoprecio/MODEL/obj/Debug/net7.0/MODEL.AssemblyInfoInputs.cache
+/Users/menotti/Desktop/Repository/Personal/LEE/calculoprecio/MODEL/obj/Debug/net7.0/MODEL.AssemblyInfo.cs
+/Users/menotti/Desktop/Repository/Personal/LEE/calculoprecio/MODEL/obj/Debug/net7.0/MODEL.csproj.CoreCompileInputs.cache
+/Users/menotti/Desktop/Repository/Personal/LEE/calculoprecio/MODEL/obj/Debug/net7.0/MODEL.dll
+/Users/menotti/Desktop/Repository/Personal/LEE/calculoprecio/MODEL/obj/Debug/net7.0/refint/MODEL.dll
+/Users/menotti/Desktop/Repository/Personal/LEE/calculoprecio/MODEL/obj/Debug/net7.0/MODEL.pdb
+/Users/menotti/Desktop/Repository/Personal/LEE/calculoprecio/MODEL/obj/Debug/net7.0/ref/MODEL.dll
