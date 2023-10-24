@@ -76,6 +76,44 @@ public class Repository : IRepository
 
     public Task<List<int>> GetCodigoproductoAsync(string tablaCompra, string tipoCompra, string folioCompra)
     {
-        throw new NotImplementedException();
+        var query = $@"
+            SELECT gpc.codigoProducto  
+            FROM dbo.genProductosCat AS gpc  
+                     INNER JOIN {tablaCompra} AS cdd ON gpc.codigoProducto = cdd.codigoProducto  
+                     INNER JOIN dbo.invControlExistenciasReg AS ice ON gpc.codigoProducto = ice.codigoProducto  
+                     INNER JOIN dbo.genProductosCodigosRelacionadosCat AS gpcr ON gpc.codigoProducto = gpcr.codigoProducto  
+                     INNER JOIN dbo.cmrCambioPreciosCnf AS ccp  
+                                ON gpc.codigoFamiliaUno = ccp.codigoFamilia1 AND gpc.codigoFamiliaDos = ccp.codigoFamilia2 AND  
+                                   gpc.codigoFamiliaTres = ccp.codigoFamilia3 AND gpc.codigoFamiliaCuatro = ccp.codigoFamilia4  
+            WHERE (cdd.folioCompra = '{folioCompra}')  
+              AND (ice.existencia > 0)  
+              AND (gpcr.pedir = 1)  
+            group by gpc.codigoProducto  
+                        UNION ALL  
+                        SELECT gpc.codigoProducto  
+                        FROM dbo.genProductosCat AS gpc  
+                                 INNER JOIN dbo.cmpComprasPastillerosReg AS cdpr ON gpc.codigoProducto = cdpr.codigoProducto  
+                                 INNER JOIN dbo.invControlExistenciasReg AS ice ON gpc.codigoProducto = ice.codigoProducto  
+                                 INNER JOIN dbo.genProductosCodigosRelacionadosCat AS gpcr ON gpc.codigoProducto = gpcr.codigoProducto  
+                                 INNER JOIN dbo.cmrCambioPreciosCnf AS ccp  
+                                            ON gpc.codigoFamiliaUno = ccp.codigoFamilia1 AND gpc.codigoFamiliaDos = ccp.codigoFamilia2 AND  
+                                               gpc.codigoFamiliaTres = ccp.codigoFamilia3 AND gpc.codigoFamiliaCuatro = ccp.codigoFamilia4  
+                        WHERE cdpr.tipoCompra = '{tipoCompra}'  
+                          AND cdpr.folioCompra = '{folioCompra}'  
+                          AND (gpcr.pedir = 1)  
+                        group by gpc.codigoProducto  
+                        ORDER BY gpc.codigoProducto";
+        try
+        {
+            using var con = _cnnFLee.GetConnection();
+            con.Open();
+            var result = con.Query<int>(query);
+            con.Close();
+            return Task.FromResult(result.ToList());
+        }
+        catch (Exception ex)
+        {
+            throw ex;
+        }
     }
 }
