@@ -1,28 +1,34 @@
 {
   "format": 1,
   "restore": {
-    "/Users/menotti/Desktop/Repository/Personal/LEE/calculoprecio/MODEL/MODEL.csproj": {}
+    "D:\\00-Personal\\02-PROYECTOS\\LEE\\calculoprecio\\MODEL\\MODEL.csproj": {}
   },
   "projects": {
-    "/Users/menotti/Desktop/Repository/Personal/LEE/calculoprecio/MODEL/MODEL.csproj": {
+    "D:\\00-Personal\\02-PROYECTOS\\LEE\\calculoprecio\\MODEL\\MODEL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/menotti/Desktop/Repository/Personal/LEE/calculoprecio/MODEL/MODEL.csproj",
+        "projectUniqueName": "D:\\00-Personal\\02-PROYECTOS\\LEE\\calculoprecio\\MODEL\\MODEL.csproj",
         "projectName": "MODEL",
-        "projectPath": "/Users/menotti/Desktop/Repository/Personal/LEE/calculoprecio/MODEL/MODEL.csproj",
-        "packagesPath": "/Users/menotti/.nuget/packages/",
-        "outputPath": "/Users/menotti/Desktop/Repository/Personal/LEE/calculoprecio/MODEL/obj/",
+        "projectPath": "D:\\00-Personal\\02-PROYECTOS\\LEE\\calculoprecio\\MODEL\\MODEL.csproj",
+        "packagesPath": "C:\\Users\\gmenotti\\.nuget\\packages\\",
+        "outputPath": "D:\\00-Personal\\02-PROYECTOS\\LEE\\calculoprecio\\MODEL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/menotti/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\gmenotti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "/Users/menotti/Desktop/Repository/REPRICO_NUGET_REPO": {},
-          "/usr/local/share/dotnet/library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "\\\\192.168.0.22\\comun\\00DESARROLLO\\REPRICO_NUGET_REPO": {},
+          "https://api.nuget.org/v3-index/index.json": {}
         },
         "frameworks": {
           "net7.0": {
@@ -61,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.309/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

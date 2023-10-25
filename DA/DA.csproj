@@ -7,12 +7,12 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Dapper" Version="2.1.15" />
-      <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+      <ProjectReference Include="..\MODEL\MODEL.csproj" />
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\MODEL\MODEL.csproj" />
+      <PackageReference Include="Dapper" Version="2.1.15" />
+      <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
     </ItemGroup>
 
 </Project>

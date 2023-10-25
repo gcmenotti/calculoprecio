@@ -10,3 +10,15 @@
 /Users/menotti/Desktop/Repository/Personal/LEE/calculoprecio/MODEL/obj/Debug/net7.0/refint/MODEL.dll
 /Users/menotti/Desktop/Repository/Personal/LEE/calculoprecio/MODEL/obj/Debug/net7.0/MODEL.pdb
 /Users/menotti/Desktop/Repository/Personal/LEE/calculoprecio/MODEL/obj/Debug/net7.0/ref/MODEL.dll
+D:\00-Personal\02-PROYECTOS\LEE\calculoprecio\MODEL\bin\Debug\net7.0\MODEL.deps.json
+D:\00-Personal\02-PROYECTOS\LEE\calculoprecio\MODEL\bin\Debug\net7.0\MODEL.dll
+D:\00-Personal\02-PROYECTOS\LEE\calculoprecio\MODEL\bin\Debug\net7.0\MODEL.pdb
+D:\00-Personal\02-PROYECTOS\LEE\calculoprecio\MODEL\obj\Debug\net7.0\MODEL.csproj.AssemblyReference.cache
+D:\00-Personal\02-PROYECTOS\LEE\calculoprecio\MODEL\obj\Debug\net7.0\MODEL.GeneratedMSBuildEditorConfig.editorconfig
+D:\00-Personal\02-PROYECTOS\LEE\calculoprecio\MODEL\obj\Debug\net7.0\MODEL.AssemblyInfoInputs.cache
+D:\00-Personal\02-PROYECTOS\LEE\calculoprecio\MODEL\obj\Debug\net7.0\MODEL.AssemblyInfo.cs
+D:\00-Personal\02-PROYECTOS\LEE\calculoprecio\MODEL\obj\Debug\net7.0\MODEL.csproj.CoreCompileInputs.cache
+D:\00-Personal\02-PROYECTOS\LEE\calculoprecio\MODEL\obj\Debug\net7.0\MODEL.dll
+D:\00-Personal\02-PROYECTOS\LEE\calculoprecio\MODEL\obj\Debug\net7.0\refint\MODEL.dll
+D:\00-Personal\02-PROYECTOS\LEE\calculoprecio\MODEL\obj\Debug\net7.0\MODEL.pdb
+D:\00-Personal\02-PROYECTOS\LEE\calculoprecio\MODEL\obj\Debug\net7.0\ref\MODEL.dll

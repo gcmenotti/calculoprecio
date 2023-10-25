@@ -1,0 +1,17 @@
+D:\00-Personal\02-PROYECTOS\LEE\calculoprecio\BL\bin\Debug\net7.0\BL.deps.json
+D:\00-Personal\02-PROYECTOS\LEE\calculoprecio\BL\bin\Debug\net7.0\BL.dll
+D:\00-Personal\02-PROYECTOS\LEE\calculoprecio\BL\bin\Debug\net7.0\BL.pdb
+D:\00-Personal\02-PROYECTOS\LEE\calculoprecio\BL\bin\Debug\net7.0\DA.dll
+D:\00-Personal\02-PROYECTOS\LEE\calculoprecio\BL\bin\Debug\net7.0\MODEL.dll
+D:\00-Personal\02-PROYECTOS\LEE\calculoprecio\BL\bin\Debug\net7.0\DA.pdb
+D:\00-Personal\02-PROYECTOS\LEE\calculoprecio\BL\bin\Debug\net7.0\MODEL.pdb
+D:\00-Personal\02-PROYECTOS\LEE\calculoprecio\BL\obj\Debug\net7.0\BL.csproj.AssemblyReference.cache
+D:\00-Personal\02-PROYECTOS\LEE\calculoprecio\BL\obj\Debug\net7.0\BL.GeneratedMSBuildEditorConfig.editorconfig
+D:\00-Personal\02-PROYECTOS\LEE\calculoprecio\BL\obj\Debug\net7.0\BL.AssemblyInfoInputs.cache
+D:\00-Personal\02-PROYECTOS\LEE\calculoprecio\BL\obj\Debug\net7.0\BL.AssemblyInfo.cs
+D:\00-Personal\02-PROYECTOS\LEE\calculoprecio\BL\obj\Debug\net7.0\BL.csproj.CoreCompileInputs.cache
+D:\00-Personal\02-PROYECTOS\LEE\calculoprecio\BL\obj\Debug\net7.0\BL.csproj.CopyComplete
+D:\00-Personal\02-PROYECTOS\LEE\calculoprecio\BL\obj\Debug\net7.0\BL.dll
+D:\00-Personal\02-PROYECTOS\LEE\calculoprecio\BL\obj\Debug\net7.0\refint\BL.dll
+D:\00-Personal\02-PROYECTOS\LEE\calculoprecio\BL\obj\Debug\net7.0\BL.pdb
+D:\00-Personal\02-PROYECTOS\LEE\calculoprecio\BL\obj\Debug\net7.0\ref\BL.dll

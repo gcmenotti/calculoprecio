@@ -15,7 +15,7 @@
           }
         }
       },
-      "Microsoft.AspNetCore.OpenApi/7.0.12": {
+      "Microsoft.AspNetCore.OpenApi/7.0.11": {
         "type": "package",
         "dependencies": {
           "Microsoft.OpenApi": "1.4.3"
@@ -266,6 +266,20 @@
           }
         }
       },
+      "BL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "DA": "1.0.0",
+          "MODEL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BL.dll": {}
+        }
+      },
       "DA/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -316,10 +330,10 @@
         "readme.md"
       ]
     },
-    "Microsoft.AspNetCore.OpenApi/7.0.12": {
-      "sha512": "KWfmBcvglieWin4srGSPiREh8/8+qCJpME9MPbsN2OVOwKkMXKta2K82Xk0BcZrZCk9tftMBO6qYfJgz0goQpg==",
+    "Microsoft.AspNetCore.OpenApi/7.0.11": {
+      "sha512": "+3PUTx950QiUzw9CriQfCpfv11cJ0uMzQrDS3BwkEDlRduAh/2+1mxDy2S8wS1j3zyQpjbtQU0fFeWTU8j0Ljg==",
       "type": "package",
-      "path": "microsoft.aspnetcore.openapi/7.0.12",
+      "path": "microsoft.aspnetcore.openapi/7.0.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -327,7 +341,7 @@
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net7.0/Microsoft.AspNetCore.OpenApi.dll",
         "lib/net7.0/Microsoft.AspNetCore.OpenApi.xml",
-        "microsoft.aspnetcore.openapi.7.0.12.nupkg.sha512",
+        "microsoft.aspnetcore.openapi.7.0.11.nupkg.sha512",
         "microsoft.aspnetcore.openapi.nuspec"
       ]
     },
@@ -979,6 +993,11 @@
         "version.txt"
       ]
     },
+    "BL/1.0.0": {
+      "type": "project",
+      "path": "../BL/BL.csproj",
+      "msbuildProject": "../BL/BL.csproj"
+    },
     "DA/1.0.0": {
       "type": "project",
       "path": "../DA/DA.csproj",
@@ -992,45 +1011,51 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "BL >= 1.0.0",
       "DA >= 1.0.0",
-      "MODEL >= 1.0.0",
-      "Microsoft.AspNetCore.OpenApi >= 7.0.12",
+      "Microsoft.AspNetCore.OpenApi >= 7.0.11",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
   "packageFolders": {
-    "/Users/menotti/.nuget/packages/": {}
+    "C:\\Users\\gmenotti\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/menotti/Desktop/Repository/Personal/LEE/calculoprecio/WAPI/WAPI.csproj",
+      "projectUniqueName": "D:\\00-Personal\\02-PROYECTOS\\LEE\\calculoprecio\\WAPI\\WAPI.csproj",
       "projectName": "WAPI",
-      "projectPath": "/Users/menotti/Desktop/Repository/Personal/LEE/calculoprecio/WAPI/WAPI.csproj",
-      "packagesPath": "/Users/menotti/.nuget/packages/",
-      "outputPath": "/Users/menotti/Desktop/Repository/Personal/LEE/calculoprecio/WAPI/obj/",
+      "projectPath": "D:\\00-Personal\\02-PROYECTOS\\LEE\\calculoprecio\\WAPI\\WAPI.csproj",
+      "packagesPath": "C:\\Users\\gmenotti\\.nuget\\packages\\",
+      "outputPath": "D:\\00-Personal\\02-PROYECTOS\\LEE\\calculoprecio\\WAPI\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/menotti/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\gmenotti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "/Users/menotti/Desktop/Repository/REPRICO_NUGET_REPO": {},
-        "/usr/local/share/dotnet/library-packs": {},
-        "/usr/local/share/dotnet/sdk/7.0.309/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "\\\\192.168.0.22\\comun\\00DESARROLLO\\REPRICO_NUGET_REPO": {},
+        "https://api.nuget.org/v3-index/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/menotti/Desktop/Repository/Personal/LEE/calculoprecio/DA/DA.csproj": {
-              "projectPath": "/Users/menotti/Desktop/Repository/Personal/LEE/calculoprecio/DA/DA.csproj"
+            "D:\\00-Personal\\02-PROYECTOS\\LEE\\calculoprecio\\BL\\BL.csproj": {
+              "projectPath": "D:\\00-Personal\\02-PROYECTOS\\LEE\\calculoprecio\\BL\\BL.csproj"
             },
-            "/Users/menotti/Desktop/Repository/Personal/LEE/calculoprecio/MODEL/MODEL.csproj": {
-              "projectPath": "/Users/menotti/Desktop/Repository/Personal/LEE/calculoprecio/MODEL/MODEL.csproj"
+            "D:\\00-Personal\\02-PROYECTOS\\LEE\\calculoprecio\\DA\\DA.csproj": {
+              "projectPath": "D:\\00-Personal\\02-PROYECTOS\\LEE\\calculoprecio\\DA\\DA.csproj"
             }
           }
         }
@@ -1047,7 +1072,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
-            "version": "[7.0.12, )"
+            "version": "[7.0.11, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
@@ -1073,7 +1098,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.309/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

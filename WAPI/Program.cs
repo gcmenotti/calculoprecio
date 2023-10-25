@@ -1,5 +1,4 @@
 using DA;
-using MODEL;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,18 +8,17 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddScoped<IRepository, Repository>();
+
+builder.Services.AddScoped<IPCRepo, PCRepo>();
 builder.Services.AddScoped<SqlCnnFLee>(provider =>
 {
-   string server = "192.168.0.17";
-   string database = "HSPharmacySoftBackOfficeE";
-   string username = "sa";
-   string password = "ClubFarmaSQLAdmin12.";
+    var server = "192.168.0.17";
+    var database = "HSPharmacySoftBackOfficeE";
+    var username = "sa";
+    var password = "ClubFarmaSQLAdmin12.";
 
     return new SqlCnnFLee(server, database, username, password);
 });
-
-
 
 var app = builder.Build();
 
