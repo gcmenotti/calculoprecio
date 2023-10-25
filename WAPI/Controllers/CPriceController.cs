@@ -51,14 +51,47 @@ public class CPriceController : ControllerBase
         foreach (var cod in productCodes)
         {
             var productData = await _repository.GetProductDataAsync(tablaCompra, tipoCompra, folioCompra, cod);
-
-
+           
+            var sumMargen = productData.Average(data => data.Margen);
             var sumPrecioFarmacia = productData.Average(data => data.PrecioFarmacia);
+            var sumExistencia = productData.Sum(data => data.Existencia);
+            var sumPrecioActual = productData.Average(data => data.PrecioActual);
+            var PorcentajeFinal = 0M;
+            var sumPorcentajeFinal = 0M;
 
+            foreach (var plist in productData)
+            {
+                PorcentajeFinal = (Convert.ToDecimal(plist.Existencia) * plist.PrecioFarmacia) / sumExistencia;
+                sumPorcentajeFinal += PorcentajeFinal;
+            }
+            
+            var Adjustment = 0M;
+            var PrecioFinal = 0M;
+            var PrecioVenta = 0M;
+            
+            
+            foreach (var pro in productData)
+            {
+                 Adjustment = sumPorcentajeFinal * 100M / pro.PrecioFarmaciaCat - 100M;
+                 PrecioFinal = !(Adjustment > 0.6M) ? pro.PrecioFarmaciaCat : sumPorcentajeFinal;
+                 PrecioVenta = PrecioFinal / (1M - Convert.ToDecimal(pro.Margen) / 100M);
+            }
+            
             var productInfo = new ProductInfo
             {
-
-                PrecioFarmaciaNuevo = sumPrecioFarmacia,
+                CodigoProducto = productData[0].CodigoProducto,
+                CodigoRelacionado = productData[0].CodigoRelacionado,
+                Descripcion = productData[0].Descripcion,
+                PrecioVentaActual = sumPrecioActual, 
+                PrecioFarmaciaNuevo = PrecioFinal,
+                PrecioVentaNuevo = PrecioVenta,
+                Margen = sumMargen,
+                CantidadPastillero = productData[0].CantidadPastillero,
+                PrecioVentaCajaActual = sumPrecioActual * productData[0].CantidadPastillero,
+                CostoCaja = PrecioFinal * productData[0].CantidadPastillero,
+                PrecioVentaCajaNuevo = PrecioVenta * productData[0].CantidadPastillero,
+                
+                
             };
 
             pCalc.Add(productInfo);

@@ -541,44 +541,37 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gmenotti\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/Users/menotti/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\00-Personal\\02-PROYECTOS\\LEE\\calculoprecio\\BL\\BL.csproj",
+      "projectUniqueName": "/Users/menotti/Desktop/Repository/Personal/LEE/calculoprecio/BL/BL.csproj",
       "projectName": "BL",
-      "projectPath": "D:\\00-Personal\\02-PROYECTOS\\LEE\\calculoprecio\\BL\\BL.csproj",
-      "packagesPath": "C:\\Users\\gmenotti\\.nuget\\packages\\",
-      "outputPath": "D:\\00-Personal\\02-PROYECTOS\\LEE\\calculoprecio\\BL\\obj\\",
+      "projectPath": "/Users/menotti/Desktop/Repository/Personal/LEE/calculoprecio/BL/BL.csproj",
+      "packagesPath": "/Users/menotti/.nuget/packages/",
+      "outputPath": "/Users/menotti/Desktop/Repository/Personal/LEE/calculoprecio/BL/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\gmenotti\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/menotti/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
-        "\\\\192.168.0.22\\comun\\00DESARROLLO\\REPRICO_NUGET_REPO": {},
-        "https://api.nuget.org/v3-index/index.json": {}
+        "/Users/menotti/Desktop/Repository/REPRICO_NUGET_REPO": {},
+        "/usr/local/share/dotnet/library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\00-Personal\\02-PROYECTOS\\LEE\\calculoprecio\\DA\\DA.csproj": {
-              "projectPath": "D:\\00-Personal\\02-PROYECTOS\\LEE\\calculoprecio\\DA\\DA.csproj"
+            "/Users/menotti/Desktop/Repository/Personal/LEE/calculoprecio/DA/DA.csproj": {
+              "projectPath": "/Users/menotti/Desktop/Repository/Personal/LEE/calculoprecio/DA/DA.csproj"
             },
-            "D:\\00-Personal\\02-PROYECTOS\\LEE\\calculoprecio\\MODEL\\MODEL.csproj": {
-              "projectPath": "D:\\00-Personal\\02-PROYECTOS\\LEE\\calculoprecio\\MODEL\\MODEL.csproj"
+            "/Users/menotti/Desktop/Repository/Personal/LEE/calculoprecio/MODEL/MODEL.csproj": {
+              "projectPath": "/Users/menotti/Desktop/Repository/Personal/LEE/calculoprecio/MODEL/MODEL.csproj"
             }
           }
         }
@@ -608,7 +601,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.309/RuntimeIdentifierGraph.json"
       }
     }
   }
